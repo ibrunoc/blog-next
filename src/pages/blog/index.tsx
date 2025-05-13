@@ -98,7 +98,7 @@ const Index = ({ posts = [], preview }) => {
                     src={post.Image}
                     alt="Imagem do post"
                     style={{ maxWidth: '100%', height: 'auto' }}
-                    onError={(e) => (e.target.style.display = 'none')} // 🔥 Esconde imagens inválidas
+                    onError={(e) => ((e.target as HTMLImageElement).style.display = 'none')}
                   />
                 )}
                 <h3>
