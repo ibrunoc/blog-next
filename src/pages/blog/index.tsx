@@ -30,15 +30,14 @@ export async function getStaticProps({ preview }) {
         authorsToGet.add(author)
       }
 
-      // ✅ Apenas usamos a URL do Notion diretamente
       if (
         post.Image &&
         typeof post.Image === 'string' &&
         post.Image.startsWith('http')
       ) {
-        post.Image = post.Image // URL já válida do Cloudinary
+        post.Image = post.Image
       } else {
-        post.Image = null // Sem imagem válida
+        post.Image = null
       }
 
       return post
@@ -51,14 +50,14 @@ export async function getStaticProps({ preview }) {
     post.Authors = post.Authors.map((id) => users[id].full_name)
   })
 
-  console.log('Posts processados:', posts) // ✅ Verifique se as URLs estão corretas no console
+  console.log('Posts processados:', posts)
 
   return {
     props: {
       preview: preview || false,
       posts,
     },
-    revalidate: 600, // 🔥 Atualiza os dados a cada 10 minutos para garantir imagens sempre válidas
+    revalidate: 600,
   }
 }
 
@@ -83,7 +82,7 @@ const Index = ({ posts = [], preview }) => {
           <p className={blogStyles.noPosts}>There are no posts yet</p>
         )}
         {posts.map((post) => {
-          console.log(post.Image) // ✅ Verifique se a URL da imagem aparece no console do navegador
+          console.log(post.Image)
 
           return (
             <Link
@@ -92,7 +91,6 @@ const Index = ({ posts = [], preview }) => {
               key={post.Slug}
             >
               <div className={blogStyles.postPreview}>
-                {/* ✅ Exibe a imagem corretamente se a URL for válida */}
                 {post.Image && (
                   <img
                     src={post.Image}
