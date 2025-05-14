@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <feed xmlns="http://www.w3.org/2005/Atom">
+    <title>My Blog</title>
+    <subtitle>Blog</subtitle>
+    <link href="/atom" rel="self" type="application/rss+xml"/>
+    <link href="/" />
+    <updated>2025-05-14T13:44:51.347Z</updated>
+    <id>My Notion Blog</id>
+    <entry>
+      <id>/blog/primeiro</id>
+      <title>Primeiro Blog</title>
+      <link href="/blog/primeiro"/>
+      <updated>2025-05-13T03:00:00.407Z</updated>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          <p>Descrição do Post</p>
+          <p class="more">
+            <a href="/blog/primeiro">Read more</a>
+          </p>
+        </div>
+      </content>
+      <author><name></name></author>
+    </entry>
+    <entry>
+      <id>/blog/terceiro</id>
+      <title>Terceiro Blog</title>
+      <link href="/blog/terceiro"/>
+      <updated>2025-05-14T03:00:00.407Z</updated>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          <p>Agora foi, certeza!</p>
+          <p class="more">
+            <a href="/blog/terceiro">Read more</a>
+          </p>
+        </div>
+      </content>
+      <author><name></name></author>
+    </entry>
+    <entry>
+      <id>/blog/receba-quarto</id>
+      <title>Quarto Blog e Ultimo por hoje</title>
+      <link href="/blog/receba-quarto"/>
+      <updated>2025-05-14T03:00:00.407Z</updated>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          <p>Agora foi sem precisar de outro deploy</p>
+          <p class="more">
+            <a href="/blog/receba-quarto">Read more</a>
+          </p>
+        </div>
+      </content>
+      <author><name></name></author>
+    </entry>
+    <entry>
+      <id>/blog/teste</id>
+      <title>Teste, só para vê</title>
+      <link href="/blog/teste"/>
+      <updated>2025-05-15T03:00:00.408Z</updated>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          <p>Descrição</p>
+          <p class="more">
+            <a href="/blog/teste">Read more</a>
+          </p>
+        </div>
+      </content>
+      <author><name></name></author>
+    </entry>
+    <entry>
+      <id>/blog/segundo</id>
+      <title>Segundo Blog</title>
+      <link href="/blog/segundo"/>
+      <updated>2025-05-13T03:00:00.408Z</updated>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          <p>Aqui nunca errei</p>
+          <p class="more">
+            <a href="/blog/segundo">Read more</a>
+          </p>
+        </div>
+      </content>
+      <author><name></name></author>
+    </entry>
+  </feed>

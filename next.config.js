@@ -1,3 +1,10 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export'
+};
+
+module.exports = nextConfig;
+
 const fs = require('fs')
 const path = require('path')
 const {
